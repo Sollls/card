@@ -1,0 +1,122 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: raleway_m;
+	src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+	font-weight: 300;
+}
+@font-face {
+	font-family: raleway_m;
+	src: url(../fonts/raleway-v22-cyrillic-900.woff2);
+	font-weight: 900;
+}
+
+body {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    font-family: raleway_m, sans-serif;
+}
+
+.dg.ac {
+    display: none;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+span {
+    font-size: 100px;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    font-weight: 600;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.socials {
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.socials a {
+    color: #ccc;
+    border: 1.5px solid #ccc;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.socials a:hover {
+    color: #fff;
+    background-color: #212329;
+    border-color: #1d4ed8;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 900px) {
+    .socials {
+        top: 50%;
+        margin-top: 10px;
+    }
+  
+    span {
+        font-size: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .socials {
+        top: 45%;
+         margin-top: 10px;
+    }
+  
+    span {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (orientation: landscape) {
+    /* Стили для горизонтальной ориентации экрана */
+    .socials {
+        margin-top: 10px;
+    }
+
+    span {
+        margin-bottom: 10px;
+    }
+}
