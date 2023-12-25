@@ -60,7 +60,7 @@ span {
 
 .socials {
     position: fixed;
-    top: 53%;
+    top: 40%;
     left: 51%;
     transform: translate(-50%, -50%);
     display: inline-flex;
